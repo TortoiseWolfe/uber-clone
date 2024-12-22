@@ -1,4 +1,4 @@
-import { Image, Text, StyleSheet, View, Platform } from 'react-native';
+import { Image, Text, StyleSheet, View, Platform, StatusBar } from 'react-native';
 
 import { HelloWave } from '@/components/HelloWave';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -8,13 +8,9 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function HomeScreen() {
   return (
-
-    <SafeAreaView>
-      <View>
-        <Text className='text-red-500'>
-          Index
-        </Text>
-      </View>
+    <SafeAreaView className="flex-1 items-center justify-center bg-white">
+      <Text className='text-red-500'>Uber Clone!</Text>
+      <StatusBar style="auto" />
     </SafeAreaView>
     
 
